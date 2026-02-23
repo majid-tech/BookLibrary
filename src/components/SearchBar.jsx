@@ -42,7 +42,7 @@ function SearchBar({ onSearch }) {
       {/* Submit Button */}
       <button
         type="submit"
-        className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:cursor-pointer hover:bg-blue-700 transition duration-200"
+        className="px-6 py-2 bg-cyan-950 text-white font-medium rounded-lg hover:cursor-pointer hover:bg-blue-700 transition duration-200"
       >
         Search
       </button>
