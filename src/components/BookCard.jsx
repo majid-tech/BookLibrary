@@ -1,10 +1,9 @@
 function BookCard({
-  title = "Unknown Title",
-  author = "Unknown Author",
-  publishedYear = "N/A",
-  rating = "N/A",
-  coverUrl = "",
-  description = "No description available.",
+  title = 'Unknown Title',
+  authors = 'Unknown Author',
+  publisher = 'Unknown Publisher',
+  coverUrl = '',
+  description = 'No description available.',
   onViewDetails,
 }) {
   return (
@@ -26,17 +25,12 @@ function BookCard({
       <div className="p-4 flex flex-col gap-3">
         <div>
           <h3 className="text-lg font-bold text-cyan-950 line-clamp-2">{title}</h3>
-          <p className="text-sm text-gray-600">{author}</p>
+          <p className="text-sm text-gray-600 line-clamp-2">{authors}</p>
         </div>
 
-        <div className="flex items-center gap-4 text-sm text-gray-700">
-          <span>
-            <strong>Year:</strong> {publishedYear}
-          </span>
-          <span>
-            <strong>Rating:</strong> {rating}
-          </span>
-        </div>
+        <p className="text-sm text-gray-700">
+          <span className="font-semibold">Publisher:</span> {publisher}
+        </p>
 
         <p className="text-sm text-gray-700 line-clamp-3">{description}</p>
 
